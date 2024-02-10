@@ -1,5 +1,7 @@
 ## Enunciado
 
+API KEY: 2bcb2bae
+
 Crea una aplicación para buscar películas
 
 API a usar: - https://www.omdbapi.com/
