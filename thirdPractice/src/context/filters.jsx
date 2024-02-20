@@ -9,7 +9,7 @@ export function FiltersProvider({ children }) {
   });
 
   return (
-    <FiltersContext.Provider value={(filters, setFilters)}>
+    <FiltersContext.Provider value={{ filters, setFilters }}>
       {children}
     </FiltersContext.Provider>
   );

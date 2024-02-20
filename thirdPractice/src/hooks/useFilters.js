@@ -3,12 +3,15 @@ import { FiltersContext } from '../context/filters';
 
 export function useFilters() {
   const { filters, setFilters } = useContext(FiltersContext);
-  const filteredProducts = (products) => {
+
+  const filterProducts = (products) => {
     return products.filter((product) => {
-      product.price >= filters.minPrice &&
-        (filters.category === 'all' || product.category === filters.category);
+      return (
+        product.price >= filters.minPrice &&
+        (filters.category === 'all' || product.category === filters.category)
+      );
     });
   };
 
-  return { filters, filteredProducts, setFilters };
+  return { filters, filterProducts, setFilters };
 }

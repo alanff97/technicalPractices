@@ -1,4 +1,4 @@
-import { AddToCartIcon } from "./Icons";
+import { AddToCartIcon } from './Icons';
 export function Products({ products }) {
   return (
     <main className="products">

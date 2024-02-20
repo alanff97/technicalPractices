@@ -10,6 +10,7 @@ function App() {
 
   const filteredProducts = filterProducts(products);
 
+
   return (
     <>
       <Header />
